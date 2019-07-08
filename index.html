@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- Nav -->
+		<nav class="zone blue sticky">
+			<ul class="main-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="img/resume.pdf" target="_blank">Resume</a></li>
+				<li class="last"><a href="#contacts">Contacts</a></li>
+			</ul>
+		</nav>
+  	
+  	<!-- Home -->
+  <div id="home" class="zone container">
+  	 <div class="side">
+  	 	<img class="cover" src="./img/myimage.jpg">
+     </div>
+  	 <div class="main">
+  	 	<h1>Hi. I'm <strong>Vimal Kumar</strong>.</h1>
+  	   <p>Welcome to my portfolio website</p>
+  	   <h2><strong>Front End Developer</strong></h2>
+  	   <p>HTML | CSS | Javascript | Bootstrap | React | Redux | NodeJs | Express | PostgreSQL </p>
+
+          <a href="#projects" class="btn large">Find More</a>
+  	 </div>
+  	
+  </div>
+
+ <!-- Projects -->
+ <article id="projects">
+  <div class="project">
+
+    <header>
+      <h2>Recent Projects</h2>
+      <h3>Here's some stuff I made recently</h3>
+    </header>
+  
+    <div class="zone blue grid-wrapper">
+      <div class="box zone"> 
+        <a href="https://vimalraveendra.github.io/Background-Generator/">
+          <img src="./img/backgroundgenerator.png" alt="backgroundgenerator"></a> 
+        <h3>
+          <a href="https://vimalraveendra.github.io/Background-Generator/">Background-Generator</a>
+           </h3>
+      </div>
+
+      <div class="box zone">
+        <a href="https://codepen.io/Vimalraveendra/full/KeJqyV">
+         <img src="./img/dancingrobot.png"></a>
+
+         <h3>
+          <a href="https://codepen.io/Vimalraveendra/full/KeJqyV">DancingRobot</a>
+        </h3>
+       </div>
+        
+      <div class="box zone">
+          <a href="https://smart-recognition-app.herokuapp.com/"> 
+           <img src="./img/faceapp.png" alt="face-recognition"></a>
+          <h3>
+            <a href="https://smart-recognition-app.herokuapp.com/">Face-recognition</a>
+          </h3>
+       </div>
+       
+
+      <div class="box zone">
+        <a href="https://vimalraveendra.github.io/RoboFriend-Redux/">
+         <img src="./img/robotfriends.png" alt="robotfriend"></a>
+        <h3>
+           <a href="https://vimalraveendra.github.io/RoboFriend-Redux/">RoboFriends</a>
+        </h3>
+      </div>
+
+      <div class="box zone">
+        <a href="https://vimalraveendra.github.io/shoppingList/">
+         <img src="./img/shoppinglist.png " alt="shoppinglist"></a>
+        <h3>
+          <a href="https://vimalraveendra.github.io/shoppingList/">ShoppingList</a>
+        </h3>
+      </div>
+
+      <div class="box zone">
+        <a href="https://vimalraveendra.github.io/startuppage/">
+        <img src="./img/startup.png" alt="startup"></a>
+
+        <h3>
+          <a href="https://vimalraveendra.github.io/startuppage/">Startuppage</a>
+        </h3>
+      </div>
+    </div>
+</article>
+  <!-- Contacts -->
+  
+<article id="contacts">
+  <div class="zone black">
+      <header>
+        <h3 style="color:#fff">Contact me</h3>
+      </header>
+    <div class="contact">
+       <div class="message">
+        
+         <p><span class="fa fa-map-marker">Wroclaw,Poland</span></p>
+         <p><span class="fa fa-phone"></span>Phone:(+48) 5143105424556</p>
+         <p><span class="fa fa-envelope"></span>E-mail:vimalraveendra@gmail.com</p>
+         
+       </div>
+
+       <div class="form">
+          <div>
+             <input class="form-style" type="text" name="fname" size="30" placeholder="Name" required>
+             <input class="form-style" type="email" name="email" size="30" placeholder="Email" required>
+          </div>    
+            <div>
+            <textarea class="form-textarea" rows="10" placeholder="comment"></textarea>
+            </div>
+            <div>
+              <a href="#home" class="btn btn-push" type="submit">Send</a>
+          </div>
+          
+     </div>     
+       
+   </div>
+
+ </div>
+</article>
+
+<!-- Footer -->
+ <footer class="zone black">
+    <h6>Copyright@vimalraveendra2019</h6>
+  </footer >
+ 
+
+  
+
+</body>
+</html>
