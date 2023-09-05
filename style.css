@@ -44,13 +44,6 @@ html{
 
 }
 
-@media only screen and (max-width: 600px) {
-    .main-nav{
-        font-size: 0.5em;
-        padding: 0;
-    }
-    
-}
 
 .last{
     margin-left:auto;
@@ -141,31 +134,6 @@ h2 strong{
     
 }
 
-@media only screen and (max-width: 700px){
-    .container  {
-       flex-direction: column;
-       font-size: 0.8em;
-       padding: 0;
-       
-    }
-}
-@media only screen and (max-width: 700px){
-    .large {
-        font-size:1.5em;
-        letter-spacing:0;
-        
-
-    }
-}
- @media only screen and (max-width: 700px){
-    .btn {
-        
-        width: 70%;
-
-    }
-}
-
-    
 
 
     
@@ -290,23 +258,6 @@ h3{
 
 
 
-@media only screen and (max-width: 700px){
-    .contact {
-       flex-direction: column;
-      
-    }
-}
-
-
-
-@media only screen and (max-width: 700px){
-    .text{
-       font-size: 0.7em;
-      line-height: 1.5em;
-      
-    }
-}
-
 
 hr {
     border:0;
@@ -415,4 +366,40 @@ h6{
     background: -ms-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* IE10+ */
     background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .container  {
+       flex-direction: column;
+       font-size: 0.8em;
+       padding: 0;
+       
+    }
+    .large {
+        font-size:1.5em;
+        letter-spacing:0;
+
+    }
+
+    .btn {
+        
+        width: 70%;
+
+    }
+
+    .contact {
+       flex-direction: column;
+      
+    }
+
+    .text{
+       font-size: 0.7em;
+      line-height: 1.5em;
+      
+    }
 }
