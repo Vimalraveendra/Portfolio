@@ -1,0 +1,17 @@
+.navbar-menu-container{
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    padding:10px;
+}
+.navbar-btn{
+
+    border: 2px solid orange;
+    border-radius: 100%;
+    padding:10px;
+}
+.navbar-btn svg{
+    width:25px;
+    height: 25px;
+}
