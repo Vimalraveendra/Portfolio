@@ -17,6 +17,12 @@ export interface IDefaultFormFields{
     from_email: string,
     message:string
 }
+export interface IProjectCard{
+    id:number,
+    link:string,
+    image:string,
+    name:string
+}
 
 export interface IIconInfoProps{
     Icon:IconType,
