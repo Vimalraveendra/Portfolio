@@ -1,0 +1,7 @@
+.contact-main-container{
+    display: flex;
+    margin:20px 50px;
+}
+span svg{
+    color:orange
+}
