@@ -21,9 +21,6 @@ const defaultFormFields:IDefaultFormFields = {
 const API_KEY=import.meta.env.VITE_API_KEY;
 const SERVICE_KEY=import.meta.env.VITE_SERVICE_KEY;
 const TEMPLATE_KEY=import.meta.env.VITE_TEMPLATE_KEY;
-console.log("api",API_KEY)
-console.log("api2",SERVICE_KEY)
-
 
 const ContactFormComponent = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
