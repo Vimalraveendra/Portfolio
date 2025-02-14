@@ -43,3 +43,45 @@ a:hover{
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-container{
+      display: none;
+      translate: 0 0;
+      transition: 1s ease-in-out;  
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      background: black;
+      top:100%;
+      opacity: 0;
+      z-index: 5; 
+      transition-behavior: allow-discrete;
+    }
+    .display{
+        display: flex;
+         opacity: 1;
+       @starting-style{
+         opacity: 0;
+         translate:0  0vh;
+      }
+    }
+    .nav-container li{
+        padding:4px;
+        width:100%;
+        border-bottom: 1px solid orange;
+        
+    }
+    .nav-container li:hover{
+        background-color:blue;
+        
+    }
+    a{
+        display: block;
+    }
+    .last{
+        margin-left: unset;
+    }
+  }

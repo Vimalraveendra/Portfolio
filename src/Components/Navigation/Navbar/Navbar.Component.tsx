@@ -1,11 +1,13 @@
 
 import { Link } from 'react-scroll';
 import { NAV_DATA } from '../../../utils/nav-data';
+import { INavbarProps } from '../../../Model/Portfolio.model';
 
 
-const NavBarComponent= () => {
+
+const NavbarComponent:React.FC<INavbarProps> = ({navbarToggle, onToggleNavbar }) => {
   return (
-       <ul className={`nav-container `}>
+       <ul className={`nav-container ${navbarToggle? "display" : ""}`}>
                 {
                     NAV_DATA.map((data)=><li key={data.id} className={`${data.link==='contact'?"last":""}`}>
                       {
@@ -17,6 +19,7 @@ const NavBarComponent= () => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          onClick={onToggleNavbar}
                           >{data.name}</Link>
                         )
                       }
@@ -25,10 +28,7 @@ const NavBarComponent= () => {
                     
                 }
                 </ul>
-          
-          
-
   )
 }
 
-export default NavBarComponent
+export default NavbarComponent

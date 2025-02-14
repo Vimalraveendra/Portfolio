@@ -34,3 +34,10 @@ export interface IInfoModalProps{
     infoText:string,
     handleToggleInfoModal:()=>void
 }
+export interface INavbarProps{
+    navbarToggle:boolean,
+    onToggleNavbar:()=>void
+}
+export interface INavbarMenuProps{
+    onToggleNavbar:()=>void
+}
