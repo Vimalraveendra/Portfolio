@@ -11,3 +11,9 @@ export interface ISkill{
    name:string,
    icon:IconType
 }
+
+export interface IDefaultFormFields{
+    from_name:string,
+    from_email: string,
+    message:string
+}

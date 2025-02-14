@@ -1,4 +1,5 @@
 
+import ContactComponent from "../../Components/Contact/Contact.Component"
 import "./ContactPage.styles.css"
 
 const ContactPage = () => {
@@ -8,6 +9,7 @@ const ContactPage = () => {
       <p>
         Feel free to reach out me if you’d like to collaborate
       </p>
+      <ContactComponent/>
     </div>
   )
 }
