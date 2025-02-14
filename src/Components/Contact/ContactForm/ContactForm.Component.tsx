@@ -25,7 +25,7 @@ const TEMPLATE_KEY=import.meta.env.VITE_TEMPLATE_KEY;
 const ContactFormComponent = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const [error, setError] = useState<boolean>(false);
-  const formRef= useRef<HTMLFormElement>(null);
+  const formRef= useRef<HTMLFormElement|null>(null);
   const[toggleInfoModal,setToggleInfoModal]=useState<boolean>(false)
   const { from_name,from_email,message } = formFields;
 
@@ -41,8 +41,12 @@ const ContactFormComponent = () => {
 
   const handleOnSubmit = (e:React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const currentFormRef=formRef.current;
+    if(currentFormRef===null){
+      return;
+    }
     emailjs
-      .sendForm(SERVICE_KEY, TEMPLATE_KEY, formRef.current, {
+      .sendForm(SERVICE_KEY, TEMPLATE_KEY, currentFormRef, {
         publicKey: API_KEY,
       })
       .then(

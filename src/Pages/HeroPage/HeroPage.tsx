@@ -7,7 +7,7 @@ const HeroPage = () => {
 
 <div  id="home"  className="zone hero-container">
   	 <div className="hero-section">
-  	 	<img className="cover" src="/src/assets/myimage.jpg"/>
+  	 	<img className="cover" src="./src/assets/myimage.jpg"/>
      </div>
   	 <div className="main">
   	 	<h1>Hi. I'm <strong>Vimal Kumar</strong>.</h1>
