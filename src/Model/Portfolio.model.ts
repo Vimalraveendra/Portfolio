@@ -17,3 +17,14 @@ export interface IDefaultFormFields{
     from_email: string,
     message:string
 }
+
+export interface IIconInfoProps{
+    Icon:IconType,
+    text:string,
+    link?:string
+}
+
+export interface IInfoModalProps{
+    infoText:string,
+    handleToggleInfoModal:()=>void
+}

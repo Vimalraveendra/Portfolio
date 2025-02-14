@@ -5,6 +5,7 @@ import FormInputComponent from "../FormInput/FormInput.Component";
 import FormTextareaComponent from "../FormTextarea/FormTextarea.Component";
 import ButtonComponent from "../../Button/Button.Component";
 import { IDefaultFormFields } from "../../../Model/Portfolio.model";
+import InfoModalComponent from "../InfoModal/InfoModal.Component";
 
 import "./ContactForm.styles.css"
 
@@ -17,10 +18,18 @@ const defaultFormFields:IDefaultFormFields = {
 
 };
 
+const API_KEY=import.meta.env.VITE_API_KEY;
+const SERVICE_KEY=import.meta.env.VITE_SERVICE_KEY;
+const TEMPLATE_KEY=import.meta.env.VITE_TEMPLATE_KEY;
+console.log("api",API_KEY)
+console.log("api2",SERVICE_KEY)
+
+
 const ContactFormComponent = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const [error, setError] = useState<boolean>(false);
   const formRef= useRef<HTMLFormElement>(null);
+  const[toggleInfoModal,setToggleInfoModal]=useState<boolean>(false)
   const { from_name,from_email,message } = formFields;
 
   const handleOnChange = (event:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>) => {
@@ -31,17 +40,17 @@ const ContactFormComponent = () => {
     setFormFields({ ...formFields, [name]: value });
   
   };
-
+  const handleToggleInfoModal = () => setToggleInfoModal(!toggleInfoModal);
 
   const handleOnSubmit = (e:React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_5l5zwhg", "template_xbafbsn", formRef.current, {
-        publicKey: "3xpR2jvyWggv2psEY",
+      .sendForm(SERVICE_KEY, TEMPLATE_KEY, formRef.current, {
+        publicKey: API_KEY,
       })
       .then(
         () => {
-             console.log("Success")
+            setToggleInfoModal(true)
              setFormFields(defaultFormFields)
         },
         (error) => {
@@ -83,6 +92,12 @@ const ContactFormComponent = () => {
       />
       <ButtonComponent type="submit"  buttonType="primary">Send</ButtonComponent>
      
+      {toggleInfoModal && 
+          <InfoModalComponent
+            infoText={"Message Sent Successfully"}
+            handleToggleInfoModal={handleToggleInfoModal}
+          />
+      }
     </form>
 
   )
