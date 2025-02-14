@@ -1,0 +1,31 @@
+.skills-main-container{
+    padding:50px;
+    
+}
+.skills-main-container h2{
+    color: white;
+}
+
+.skills-container{
+    display: flex;
+    gap:25px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:10px;
+    justify-content: center ;
+}
+.icon-container{
+    color:orange;
+    width:100px;
+    height:60px;
+}
+.icon-container svg{
+    width:40px;
+    height:80px;
+
+}
+.skill-container p{
+  color:white;
+  font-size:1rem;
+  padding:5px;
+}
