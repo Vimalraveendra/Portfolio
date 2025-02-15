@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-
+import HeroImage from "../../assets/myimage.jpg"
 import "./HeroPage.styles.css"
 
 const HeroPage = () => {
@@ -7,7 +7,7 @@ const HeroPage = () => {
 
 <div  id="home"  className="zone hero-container">
   	 <div className="hero-section">
-  	 	<img className="cover" src="./src/assets/myimage.jpg"/>
+  	 	<img className="cover" src={HeroImage}/>
      </div>
   	 <div className="main">
   	 	<h1>Hi. I'm <strong>Vimal Kumar</strong>.</h1>
