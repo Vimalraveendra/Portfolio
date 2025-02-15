@@ -21,61 +21,61 @@ export const CARD_DATA:IProjectCard[]=[
     {
         id:101,
         link:"https://vimalraveendra.github.io/React-vite-task/",
-        image:"./src/assets/magic-match.png",
-        name:Magic,
+        image:Magic,
+        name:'magic-match',
     },
     
    
     {
         id:102,
         link:"https://vimalraveendra.github.io/weatherapp-redux/",
-        image:"./src/assets/weather.png",
-        name:Weather,
+        image:Weather,
+        name:'weather-finder'
     },
     {
         id:103,
         link:"https://vimalraveendra.github.io/food-recipe/",
-        image:"./src/assets/recipe.png",
-        name:Recipe
+        image:Recipe,
+        name:"recipe-search"
     },
     {
         id:104,
         link:"https://vimalraveendra.github.io/personslist-redux/",
-        image:"./src/assets/list.png",
-        name:Customer
+        image:Customer,
+        name:'customers-list'
     },
    
     {
         id:105,
         link:"https://vimalraveendra.github.io/movie-finder-angular/",
-        image:"./src/assets/movie-finder.png",
-        name:Movie,
+        image:Movie,
+        name:'movie-finder',
     },
     {
         id:106,
         link:"https://vimalraveendra.github.io/investment-calculator-standalone/",
-        image:"./src/assets/investment-calculator.png",
-        name:Calculator,
+        image:Calculator,
+        name:'investment-calculator',
     },
   
     {
         id:107,
         link:"https://vimalraveendra.github.io/RoboFriend-Redux/",
-        image:"./src/assets/robo-friends.png",
-        name:Robo,
+        image:Robo,
+        name:'Robo-friends',
     },
     {
         id:108,
         link:"https://vimalraveendra.github.io/shoppingList/",
-        image:"./src/assets/shopping-list.png",
-        name:Shopping,
+        image:Shopping,
+        name:'shopping-list',
     },
    
     {
         id:109,
         link:"https://vimalraveendra.github.io/Background-Generator/",
-        image:"./src/assets/background-generator.png",
-        name:Generator,
+        image:Generator,
+        name:'background-generator',
     },
    
 ]
