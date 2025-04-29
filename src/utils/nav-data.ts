@@ -1,4 +1,4 @@
-import Resume from '../assets/resume.pdf'
+// import Resume from '../assets/resume.pdf'
 import { INavData } from '../Model/Portfolio.model'
 
 export const NAV_DATA:INavData[]=[
@@ -17,13 +17,13 @@ export const NAV_DATA:INavData[]=[
             link:'projects',
             name:"Projects"
 },
-{
-            id: 4,
-            link:`${Resume}`,
-             name:"Resume"
-    },
+// {
+//             id: 4,
+//             link:`${Resume}`,
+//              name:"Resume"
+//     },
     {
-           id: 5,
+           id: 4,
            link:'contact',
             name:"Contact"
 }
