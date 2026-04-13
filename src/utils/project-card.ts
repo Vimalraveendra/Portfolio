@@ -42,7 +42,7 @@ export const CARD_DATA:IProjectCard[]=[
         id:104,
         link:"https://vimalraveendra.github.io/personslist-redux/",
         image:Customer,
-        name:'customers-list'
+        name:'customer-list'
     },
    
     {
