@@ -5,7 +5,7 @@ import "./ProjectsPage.styles.css"
 const ProjectsPage = () => {
   return (
     <div id="projects">
-    <div className="project">
+    <div className="project zone blue">
 
     <header>
         <h2>Recent Projects</h2>

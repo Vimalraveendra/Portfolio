@@ -21,14 +21,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.zone {
+.zone,nav,footer {
   cursor:pointer;
   text-align: center;
   font-size:1.8em;
   transition: all 0.3s linear;
-  margin:0 50px;
-
 }
+.zone{
+   max-width: 1400px;
+  margin: 0 auto; 
+}
+
 
 
   /***********************************************************************

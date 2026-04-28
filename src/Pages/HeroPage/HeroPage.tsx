@@ -12,7 +12,7 @@ const HeroPage = () => {
   	 <div className="main">
   	 	<h1>Hi. I'm <strong>Vimal Kumar</strong>.</h1>
   	   <p>Welcome to my portfolio website</p>
-  	   <h2><strong>Front-End Developer/Full-Stack Developer</strong></h2>
+  	   <h2><strong>Frontend / Full Stack Developer</strong></h2>
           <Link to="projects" className="btn large">Find More</Link>
   	 </div>
   	
