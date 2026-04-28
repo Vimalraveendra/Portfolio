@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# 👨‍💻 Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my projects, skills, and professional experience as a Full Stack Web Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 What This Portfolio Includes
 
-## Expanding the ESLint configuration
+- About me section
+- Projects showcase
+- Skills overview
+- Contact information
+- Fully responsive design
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🧩 Featured Projects
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- E-Commerce Application (Vanilla JavaScript)
+- Frontend applications using React & Redux
+- Angular-based applications using RxJS & NgRx
+- Backend-integrated applications with Java Spring Boot 
+- Backend applications using Node.js & Express.js
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🛠️ Technical Skills
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Frontend
+- HTML, CSS, JavaScript
+- React, Redux
+- Angular
+- RxJS, NgRx
+
+### Backend (collaboration / experience)
+- Java
+- Spring Boot
+- REST APIs
+- Node Js, Express Js
+
+## 🧪 Testing
+
+- Experience with unit and component testing
+- Jest
+- React Testing Library (RTL)
+- Mock Service Worker (MSW)
+
+### Tools & Workflow
+- Git, GitLab
+- Trello (Agile workflow)
+- Collaboration with cross-functional teams
+
+---
+
+## 🎯 Focus Areas
+
+- Building scalable frontend applications (React, Angular, JavaScript)
+- State management (Redux, NgRx)
+- API integration and asynchronous data handling
+- Developing and integrating REST APIs using Node.js, Express.js,  & Java Spring Boot
+- Component-based architecture and modular design
+- Writing maintainable and testable code (Jest, RTL)
+- Agile collaboration using GitLab and Trello
+
+---
+
+## 📌 Purpose
+
+This portfolio showcases my ability to build modern, scalable web applications across the frontend and backend. It highlights my experience with Javascript, React and Angular ecosystems, backend development using Node.js and Express, and collaboration with Java Spring Boot teams in real-world environments.
