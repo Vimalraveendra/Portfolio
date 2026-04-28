@@ -39,8 +39,6 @@ Personal portfolio website showcasing my projects, skills, and professional expe
 - Node Js, Express Js
 
 ## 🧪 Testing
-
-- Experience with unit and component testing
 - Jest
 - React Testing Library (RTL)
 - Mock Service Worker (MSW)
