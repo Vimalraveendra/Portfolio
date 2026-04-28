@@ -13,10 +13,9 @@ const NavigationComponent = () => {
   }
   return (
   
-        <nav className="zone blue sticky">
+        <nav className="blue sticky">
           <NavbarComponent  navbarToggle={navbarToggle}  onToggleNavbar={onToggleNavbar} />
            <NavbarMenuComponent  onToggleNavbar={onToggleNavbar} />
-           
         </nav>
     
   )

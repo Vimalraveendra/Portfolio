@@ -3,7 +3,7 @@ import { CARD_DATA } from "../../utils/project-card"
 
 const ProjectCardComponent = () => {
   return (
-    <div className="zone blue grid-wrapper">
+    <div className="grid-wrapper">
         {
             CARD_DATA.map((item)=>{
                 return(

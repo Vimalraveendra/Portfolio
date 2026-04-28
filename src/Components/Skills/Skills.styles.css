@@ -1,5 +1,6 @@
 .skills-main-container{
     padding:50px;
+    border-radius: 8px;
     
 }
 .skills-main-container h2{
@@ -29,3 +30,10 @@
   font-size:1rem;
   padding:5px;
 }
+
+@media only screen and (max-width: 480px) {
+     .skills-main-container{
+    padding:20px;
+    border-radius: 0px;
+   }
+    }
